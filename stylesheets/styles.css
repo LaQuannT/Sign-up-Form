@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   height: 100vh;
-  width: 100vw;
+  width: 50vw;
   background-image: url(/images/background-image.jpeg);
   background-size: cover;
   background-position: center center;
@@ -68,7 +68,7 @@
  }
 
  form > h3, .inputs{
-margin: 20px 0 20px var(--align);
+margin: 20px 0 45px var(--align);
  }
 
 
@@ -83,7 +83,11 @@ label {
 }
 
 input {
-  width: 200px;
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #E5E7EB;
+  font-size: medium;
 }
 
 label,input {
@@ -105,3 +109,21 @@ label,input {
  a {
   color: #596D48;
  }
+
+ #msg {
+  color: red;
+ }
+
+ input:focus {
+  border: none;
+  outline: 2px solid #596D48;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px #78797D;
+ }
+
+ input:invalid {
+  background-color: ivory;
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
+}

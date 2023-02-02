@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/styles.css">
+    <script src="/scripts/script.js" defer></script>
     <title>Sign-up</title>
   </head>
   <body>
@@ -22,7 +23,7 @@
         This is not a real online service! You now you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
       </h3>
       <h3>You know you want to.</h3>
-      <form action="" method="post" name="contact">
+      <form action="#" method="post" name="contact">
           <h3>Let's do this!</h3>
           <div class="inputs">
             <div class="form-row">
@@ -42,20 +43,21 @@
               </div>
               <div>
                 <label for="phone-number">Phone Number</label>
-                <input type="tel" name="phone-number" id="phone-number">
+                <input type="tel" name="phone-number" id="phone-number" pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$">
               </div>
             </div>
             <div class="form-row">
               <div>
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
               </div>
               <div>
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" name="confirm-password" id="confirm-password">
+                <input type="password" name="confirm-password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
               </div>
             </div>
           </div>
+          <p id="msg"></p>
           </form>
           <button type="submit" form="contacts">Create Account</button>
           <p>
