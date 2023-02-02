@@ -9,8 +9,41 @@
  }
 
  .imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 100vh;
   width: 50vw;
+  background-image: url(/images/background-image.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #ffffff;
+ }
+
+ img {
+  width: 70px;
+  height: auto;
+ }
+
+ .imgs > div {
+  background-color: #000000;
+  opacity: .6;
+ }
+
+ .imgs > div > p {
+  display: inline;
+  font-family: 'norse',sans-serif;
+ }
+
+ .imgs > p {
+  position: relative;
+  top: 25%;
+ }
+
+ .imgs > p > a{
+  color: #ffffff;
  }
 
  .content {
@@ -23,4 +56,26 @@
  form {
   background-color: #ffffff;
   box-shadow: 5px 5px 8px #78797D;
+ }
+
+ .form-row {
+  display: flex;
+  gap: 20px;
+ }
+
+label,input {
+  display: flex;
+  flex-direction: column;
+}
+
+ button {
+  background-color: #596D48;
+  color: #ffffff;
+  padding: 10px 60px;
+  border-radius: 8px;
+  align-self: flex-start;
+ }
+
+ a {
+  color: #596D48;
  }
