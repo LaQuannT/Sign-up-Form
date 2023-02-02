@@ -1,8 +1,26 @@
 @import url('https://fonts.cdnfonts.com/css/norse');
 
 
- * {
+ body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+ }
+
+ .imgs {
+  height: 100vh;
+  width: 50vw;
+ }
+
+ .content {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9fafb;
+ }
+
+ form {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 8px #78797D;
  }
